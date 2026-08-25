@@ -1,0 +1,165 @@
+# esphome/claro-fans.yaml
+# Skeleton for Claro Whisper DC fan control via ESP32 + CC1101.
+# Wire CC1101 before flashing — see wiring comments below.
+# ESPHome >= 2024.12 required for native CC1101 component.
+
+esphome:
+  name: claro-fans
+  friendly_name: Claro Fans
+
+esp32:
+  board: esp32dev  # update to actual board variant (e.g. lolin32)
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+api:
+  encryption:
+    key: !secret api_encryption_key
+
+ota:
+  - platform: esphome
+    password: !secret ota_password
+
+logger:
+
+# ── SPI bus (CC1101 module) ──────────────────────────────────────────────────
+# CC1101 8-pin green module (3.3V ONLY — do not exceed):
+#   VCC → 3.3V    GND → GND
+#   MOSI → GPIO23  MISO → GPIO19  SCK → GPIO18  CSN → GPIO5
+#   GDO0 → GPIO4  (RF data line used by remote_transmitter — see esphome#16876)
+#   GDO2 → NC
+spi:
+  clk_pin: GPIO18
+  mosi_pin: GPIO23
+  miso_pin: GPIO19
+
+# CC1101 transceiver (ESPHome ≥ 2024.12)
+cc1101:
+  cs_pin: GPIO5
+  gdo0_pin: GPIO4
+  frequency: 433920  # kHz (433.92 MHz confirmed in captures)
+  modulation: OOK
+  bandwidth: 200     # kHz
+  tx_power: 10       # dBm
+
+# ── RF transmitter ───────────────────────────────────────────────────────────
+remote_transmitter:
+  id: rf_transmitter
+  pin: GPIO4        # CC1101 GDO0 — see esphome#16876 if GDO0 conflicts
+  carrier_duty_percent: 100%  # OOK: no subcarrier
+
+# ── Frame encoder ─────────────────────────────────────────────────────────────
+# Protocol (PROTOCOL.md): 33-bit OOK-PWM frame
+#   [addr_hi 8b][addr_lo 8b][cmd 8b][chk 8b][stop 1b]
+#   chk = addr_hi ^ addr_lo ^ cmd
+#   0-bit = 412 µs mark, 1-bit = 1192 µs mark, gap = 1172 µs space
+#   4 repeats per button press, 11.9 ms reset gap between repeats
+script:
+  - id: send_claro_cmd
+    mode: queued
+    parameters:
+      addr: int   # 16-bit fan address: Fan A = 0x3123, Fan B = 0x9221
+      cmd:  int   # 8-bit command byte (see PROTOCOL.md command table)
+    then:
+      - repeat:
+          count: 4
+          then:
+            - lambda: |-
+                uint8_t hi  = (addr >> 8) & 0xFF;
+                uint8_t lo  = addr & 0xFF;
+                uint8_t c   = cmd & 0xFF;
+                uint8_t chk = hi ^ lo ^ c;
+                uint32_t frame = ((uint32_t)hi << 24) | ((uint32_t)lo << 16)
+                               | ((uint32_t)c  <<  8) |  chk;
+
+                // OOK-PWM pulse list: positive = mark µs, negative = space µs
+                std::vector<int32_t> pulses;
+                pulses.reserve(68);
+                for (int i = 31; i >= 0; i--) {
+                  pulses.push_back(((frame >> i) & 1) ? 1192 : 412);
+                  pulses.push_back(-1172);
+                }
+                pulses.push_back(1192);   // stop bit = 1
+                pulses.push_back(-11932); // reset gap before next repeat
+
+                auto tx = id(rf_transmitter).transmit();
+                tx.get_data()->set_data(pulses);
+                tx.perform();
+
+# ── Fan entities ───────────────────────────────────────────────────────────────
+# State is optimistic (RF is one-way; factory remote will desync — see issue #7).
+fan:
+  - platform: template
+    name: "Fan A"
+    id: fan_a
+    speed_count: 6
+    optimistic: true
+    turn_on_action:
+      - script.execute: {id: send_claro_cmd, addr: 0x3123, cmd: 0xFE}
+    turn_off_action:
+      - script.execute: {id: send_claro_cmd, addr: 0x3123, cmd: 0xF4}
+    set_speed_action:
+      - lambda: |-
+          const uint8_t spd[] = {0xFB, 0xF5, 0xF7, 0xF3, 0xF9, 0xFA};
+          if (x >= 1 && x <= 6) id(send_claro_cmd).execute(0x3123, spd[x-1]);
+
+  - platform: template
+    name: "Fan B"
+    id: fan_b
+    speed_count: 6
+    optimistic: true
+    turn_on_action:
+      - script.execute: {id: send_claro_cmd, addr: 0x9221, cmd: 0xFE}
+    turn_off_action:
+      - script.execute: {id: send_claro_cmd, addr: 0x9221, cmd: 0xF4}
+    set_speed_action:
+      - lambda: |-
+          const uint8_t spd[] = {0xFB, 0xF5, 0xF7, 0xF3, 0xF9, 0xFA};
+          if (x >= 1 && x <= 6) id(send_claro_cmd).execute(0x9221, spd[x-1]);
+
+# Light / CCT / reverse as buttons — placeholder pending HA entity model (issue #7)
+button:
+  - platform: template
+    name: "Fan A Light"
+    on_press: {script.execute: {id: send_claro_cmd, addr: 0x3123, cmd: 0xFC}}
+  - platform: template
+    name: "Fan A Dim +"
+    on_press: {script.execute: {id: send_claro_cmd, addr: 0x3123, cmd: 0xF0}}
+  - platform: template
+    name: "Fan A Dim -"
+    on_press: {script.execute: {id: send_claro_cmd, addr: 0x3123, cmd: 0xF2}}
+  - platform: template
+    name: "Fan A CCT Warm"
+    on_press: {script.execute: {id: send_claro_cmd, addr: 0x3123, cmd: 0xF8}}
+  - platform: template
+    name: "Fan A CCT Natural"
+    on_press: {script.execute: {id: send_claro_cmd, addr: 0x3123, cmd: 0xFD}}
+  - platform: template
+    name: "Fan A CCT Cool"
+    on_press: {script.execute: {id: send_claro_cmd, addr: 0x3123, cmd: 0xF6}}
+  - platform: template
+    name: "Fan A Reverse"
+    on_press: {script.execute: {id: send_claro_cmd, addr: 0x3123, cmd: 0xEA}}
+  - platform: template
+    name: "Fan B Light"
+    on_press: {script.execute: {id: send_claro_cmd, addr: 0x9221, cmd: 0xFC}}
+  - platform: template
+    name: "Fan B Dim +"
+    on_press: {script.execute: {id: send_claro_cmd, addr: 0x9221, cmd: 0xF0}}
+  - platform: template
+    name: "Fan B Dim -"
+    on_press: {script.execute: {id: send_claro_cmd, addr: 0x9221, cmd: 0xF2}}
+  - platform: template
+    name: "Fan B CCT Warm"
+    on_press: {script.execute: {id: send_claro_cmd, addr: 0x9221, cmd: 0xF8}}
+  - platform: template
+    name: "Fan B CCT Natural"
+    on_press: {script.execute: {id: send_claro_cmd, addr: 0x9221, cmd: 0xFD}}
+  - platform: template
+    name: "Fan B CCT Cool"
+    on_press: {script.execute: {id: send_claro_cmd, addr: 0x9221, cmd: 0xF6}}
+  - platform: template
+    name: "Fan B Reverse"
+    on_press: {script.execute: {id: send_claro_cmd, addr: 0x9221, cmd: 0xEA}}
