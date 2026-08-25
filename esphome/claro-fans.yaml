@@ -41,28 +41,25 @@ cc1101:
   gdo0_pin: GPIO4
   frequency: 433920  # kHz -- 433.92 MHz confirmed in captures
   modulation: OOK
-  bandwidth: 200     # kHz
-  tx_power: 10       # dBm
+  bandwidth: 200
+  tx_power: 10
 
 # RF transmitter
-# GDO0 carries OOK bitstream; carrier_duty_percent=100 = pure OOK, no subcarrier
 remote_transmitter:
   id: rf_transmitter
   pin: GPIO4
   carrier_duty_percent: 100%
 
 # Frame encoder
-# Protocol (PROTOCOL.md): 33-bit OOK-PWM frame
-#   [addr_hi 8b][addr_lo 8b][cmd 8b][chk 8b][stop 1b]
-#   chk = addr_hi ^ addr_lo ^ cmd
-#   0-bit = 412 us mark, 1-bit = 1192 us mark, gap = 1172 us, reset = 11932 us
-#   4 repeats per button press
+# Protocol: 33-bit OOK-PWM -- [addr_hi][addr_lo][cmd][chk][stop=1]
+# chk = addr_hi ^ addr_lo ^ cmd
+# 0-bit=412us mark, 1-bit=1192us mark, gap=1172us, reset=11932us, 4 repeats
 script:
   - id: send_claro_cmd
     mode: queued
     parameters:
-      addr: int   # 16-bit fan address: Fan A = 0x3123, Fan B = 0x9221
-      cmd:  int   # 8-bit command byte (see PROTOCOL.md command table)
+      addr: int
+      cmd: int
     then:
       - repeat:
           count: 4
@@ -74,23 +71,19 @@ script:
                 uint8_t chk = hi ^ lo ^ c;
                 uint32_t frame = ((uint32_t)hi << 24) | ((uint32_t)lo << 16)
                                | ((uint32_t)c  <<  8) |  chk;
-
-                // OOK-PWM: positive = mark us, negative = space us
                 std::vector<int32_t> pulses;
                 pulses.reserve(68);
                 for (int i = 31; i >= 0; i--) {
                   pulses.push_back(((frame >> i) & 1) ? 1192 : 412);
                   pulses.push_back(-1172);
                 }
-                pulses.push_back(1192);   // stop bit = 1
-                pulses.push_back(-11932); // reset gap before next repeat
-
+                pulses.push_back(1192);
+                pulses.push_back(-11932);
                 auto tx = id(rf_transmitter).transmit();
                 tx.get_data()->set_data(pulses);
                 tx.perform();
 
-# Fan entities
-# State is optimistic (RF is one-way; factory remote will desync -- see issue #7)
+# Fan entities (optimistic state -- RF is one-way, see issue #7)
 fan:
   - platform: template
     name: "Fan A"
@@ -120,7 +113,7 @@ fan:
           const uint8_t spd[] = {0xFB, 0xF5, 0xF7, 0xF3, 0xF9, 0xFA};
           if (x >= 1 && x <= 6) id(send_claro_cmd).execute(0x9221, spd[x-1]);
 
-# Light / CCT / reverse as buttons -- placeholder pending HA entity model (issue #7)
+# Light/CCT/reverse as buttons -- placeholder pending HA entity model (issue #7)
 button:
   - platform: template
     name: "Fan A Light"
