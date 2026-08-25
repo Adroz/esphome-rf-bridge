@@ -1,0 +1,109 @@
+# esphome/claro-fans.yaml
+# Skeleton for Claro Whisper DC fan control via ESP32 + CC1101.
+# ESPHome >= 2024.12 required for native CC1101 component.
+
+esphome:
+  name: claro-fans
+  friendly_name: Claro Fans
+
+esp32:
+  board: esp32dev
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+api:
+  encryption:
+    key: !secret api_encryption_key
+
+ota:
+  - platform: esphome
+    password: !secret ota_password
+
+logger:
+
+# CC1101 wiring (3.3V ONLY):
+#   VCC->3.3V  GND->GND
+#   MOSI->GPIO23  MISO->GPIO19  SCK->GPIO18  CSN->GPIO5
+#   GDO0->GPIO4  GDO2->NC
+spi:
+  clk_pin: GPIO18
+  mosi_pin: GPIO23
+  miso_pin: GPIO19
+
+cc1101:
+  cs_pin: GPIO5
+  gdo0_pin: GPIO4
+  frequency: 433920
+  modulation: OOK
+  bandwidth: 200
+  tx_power: 10
+
+remote_transmitter:
+  id: rf_transmitter
+  pin: GPIO4
+  carrier_duty_percent: 100%
+
+# Decision (issue #6): script-based frame composition beats 38 hardcoded raw frames.
+# Protocol: [addr_hi][addr_lo][cmd][chk=addr_hi^addr_lo^cmd][stop=1]
+# OOK-PWM: 0-bit=412us, 1-bit=1192us, gap=1172us, reset=11932us, 4x repeat
+script:
+  - id: send_claro_cmd
+    mode: queued
+    parameters:
+      addr: int
+      cmd: int
+    then:
+      - repeat:
+          count: 4
+          then:
+            - lambda: |-
+                uint8_t hi=addr>>8, lo=addr&0xFF, c=cmd&0xFF, chk=hi^lo^c;
+                uint32_t f=((uint32_t)hi<<24)|((uint32_t)lo<<16)|((uint32_t)c<<8)|chk;
+                std::vector<int32_t> p; p.reserve(68);
+                for(int i=31;i>=0;i--){p.push_back((f>>i&1)?1192:412);p.push_back(-1172);}
+                p.push_back(1192); p.push_back(-11932);
+                auto tx=id(rf_transmitter).transmit();
+                tx.get_data()->set_data(p); tx.perform();
+
+fan:
+  - platform: template
+    name: "Fan A"
+    id: fan_a
+    speed_count: 6
+    optimistic: true
+    turn_on_action:  [{script.execute: {id: send_claro_cmd, addr: 0x3123, cmd: 0xFE}}]
+    turn_off_action: [{script.execute: {id: send_claro_cmd, addr: 0x3123, cmd: 0xF4}}]
+    set_speed_action:
+      - lambda: |-
+          const uint8_t s[]={0xFB,0xF5,0xF7,0xF3,0xF9,0xFA};
+          if(x>=1&&x<=6) id(send_claro_cmd).execute(0x3123,s[x-1]);
+  - platform: template
+    name: "Fan B"
+    id: fan_b
+    speed_count: 6
+    optimistic: true
+    turn_on_action:  [{script.execute: {id: send_claro_cmd, addr: 0x9221, cmd: 0xFE}}]
+    turn_off_action: [{script.execute: {id: send_claro_cmd, addr: 0x9221, cmd: 0xF4}}]
+    set_speed_action:
+      - lambda: |-
+          const uint8_t s[]={0xFB,0xF5,0xF7,0xF3,0xF9,0xFA};
+          if(x>=1&&x<=6) id(send_claro_cmd).execute(0x9221,s[x-1]);
+
+# Light/CCT/reverse as buttons -- expand into light entities once issue #7 is resolved
+button:
+  - {platform: template, name: "Fan A Light",       on_press: {script.execute: {id: send_claro_cmd, addr: 0x3123, cmd: 0xFC}}}
+  - {platform: template, name: "Fan A Dim +",        on_press: {script.execute: {id: send_claro_cmd, addr: 0x3123, cmd: 0xF0}}}
+  - {platform: template, name: "Fan A Dim -",        on_press: {script.execute: {id: send_claro_cmd, addr: 0x3123, cmd: 0xF2}}}
+  - {platform: template, name: "Fan A CCT Warm",     on_press: {script.execute: {id: send_claro_cmd, addr: 0x3123, cmd: 0xF8}}}
+  - {platform: template, name: "Fan A CCT Natural",  on_press: {script.execute: {id: send_claro_cmd, addr: 0x3123, cmd: 0xFD}}}
+  - {platform: template, name: "Fan A CCT Cool",     on_press: {script.execute: {id: send_claro_cmd, addr: 0x3123, cmd: 0xF6}}}
+  - {platform: template, name: "Fan A Reverse",      on_press: {script.execute: {id: send_claro_cmd, addr: 0x3123, cmd: 0xEA}}}
+  - {platform: template, name: "Fan B Light",        on_press: {script.execute: {id: send_claro_cmd, addr: 0x9221, cmd: 0xFC}}}
+  - {platform: template, name: "Fan B Dim +",        on_press: {script.execute: {id: send_claro_cmd, addr: 0x9221, cmd: 0xF0}}}
+  - {platform: template, name: "Fan B Dim -",        on_press: {script.execute: {id: send_claro_cmd, addr: 0x9221, cmd: 0xF2}}}
+  - {platform: template, name: "Fan B CCT Warm",     on_press: {script.execute: {id: send_claro_cmd, addr: 0x9221, cmd: 0xF8}}}
+  - {platform: template, name: "Fan B CCT Natural",  on_press: {script.execute: {id: send_claro_cmd, addr: 0x9221, cmd: 0xFD}}}
+  - {platform: template, name: "Fan B CCT Cool",     on_press: {script.execute: {id: send_claro_cmd, addr: 0x9221, cmd: 0xF6}}}
+  - {platform: template, name: "Fan B Reverse",      on_press: {script.execute: {id: send_claro_cmd, addr: 0x9221, cmd: 0xEA}}}
