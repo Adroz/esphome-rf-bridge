@@ -1,0 +1,4 @@
+{"time" : "2026-08-25 11:35:25", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 159, "data" : "ffcdbfcebef5f7fe6dfe75f7afbff36ff3afbd7e"}], "codes" : ["{159}ffcdbfcebef5f7fe6dfe75f7afbff36ff3afbd7e"]}
+{"time" : "2026-08-25 11:35:25", "model" : "Ambientweather-F007TH", "id" : 124, "channel" : 2, "battery_ok" : 1, "temperature_F" : 67.900, "humidity" : 15, "mic" : "CRC"}
+{"time" : "2026-08-25 11:36:22", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 159, "data" : "ffcdbfcebef5f7fe6dfe75f7afbff36ff3afbd7e"}], "codes" : ["{159}ffcdbfcebef5f7fe6dfe75f7afbff36ff3afbd7e"]}
+{"time" : "2026-08-25 11:36:22", "model" : "Ambientweather-F007TH", "id" : 124, "channel" : 2, "battery_ok" : 1, "temperature_F" : 67.900, "humidity" : 15, "mic" : "CRC"}

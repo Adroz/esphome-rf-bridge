@@ -1,0 +1,38 @@
+{"time" : "2026-08-25 11:57:16", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 156, "data" : "ffcdbfcdde6beffcdbfcdde6beffcdbfcdde6bf"}], "codes" : ["{156}ffcdbfcdde6beffcdbfcdde6beffcdbfcdde6bf"]}
+{"time" : "2026-08-25 11:57:16", "model" : "Ambientweather-F007TH", "id" : 124, "channel" : 2, "battery_ok" : 1, "temperature_F" : 69.000, "humidity" : 10, "mic" : "CRC"}
+{"time" : "2026-08-25 11:58:06", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:06", "model" : "claro", "count" : 3, "num_rows" : 3, "rows" : [{"len" : 33, "data" : "3123f2e08"}, {"len" : 33, "data" : "3123f2e08"}, {"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08", "{33}3123f2e08", "{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:07", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:07", "model" : "claro", "count" : 3, "num_rows" : 3, "rows" : [{"len" : 33, "data" : "3123f2e08"}, {"len" : 33, "data" : "3123f2e08"}, {"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08", "{33}3123f2e08", "{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:08", "model" : "claro", "count" : 4, "num_rows" : 4, "rows" : [{"len" : 33, "data" : "3123f2e08"}, {"len" : 33, "data" : "3123f2e08"}, {"len" : 33, "data" : "3123f2e08"}, {"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08", "{33}3123f2e08", "{33}3123f2e08", "{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:09", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:58:13", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 156, "data" : "ffcdbfcdde6beffcdbfcdde6beffcdbfcdde6bf"}], "codes" : ["{156}ffcdbfcdde6beffcdbfcdde6beffcdbfcdde6bf"]}
+{"time" : "2026-08-25 11:58:13", "model" : "Ambientweather-F007TH", "id" : 124, "channel" : 2, "battery_ok" : 1, "temperature_F" : 69.000, "humidity" : 10, "mic" : "CRC"}

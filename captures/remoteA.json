@@ -1,0 +1,172 @@
+{"time" : "2026-08-25 11:24:58", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 159, "data" : "ffcdbfcedefcf7fe6dfe76f7e7bff36ff3b7bf3e"}], "codes" : ["{159}ffcdbfcedefcf7fe6dfe76f7e7bff36ff3b7bf3e"]}
+{"time" : "2026-08-25 11:24:58", "model" : "Ambientweather-F007TH", "id" : 124, "channel" : 2, "battery_ok" : 1, "temperature_F" : 67.400, "humidity" : 15, "mic" : "CRC"}
+{"time" : "2026-08-25 11:25:28", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123fbe98"}], "codes" : ["{33}3123fbe98"]}
+{"time" : "2026-08-25 11:25:28", "model" : "claro", "count" : 3, "num_rows" : 3, "rows" : [{"len" : 33, "data" : "3123fbe98"}, {"len" : 33, "data" : "3123fbe98"}, {"len" : 33, "data" : "3123fbe98"}], "codes" : ["{33}3123fbe98", "{33}3123fbe98", "{33}3123fbe98"]}
+{"time" : "2026-08-25 11:25:29", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123fbe98"}], "codes" : ["{33}3123fbe98"]}
+{"time" : "2026-08-25 11:25:29", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123fbe98"}], "codes" : ["{33}3123fbe98"]}
+{"time" : "2026-08-25 11:25:29", "model" : "claro", "count" : 2, "num_rows" : 2, "rows" : [{"len" : 33, "data" : "3123fbe98"}, {"len" : 33, "data" : "3123fbe98"}], "codes" : ["{33}3123fbe98", "{33}3123fbe98"]}
+{"time" : "2026-08-25 11:25:31", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123fbe98"}], "codes" : ["{33}3123fbe98"]}
+{"time" : "2026-08-25 11:25:31", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123fbe98"}], "codes" : ["{33}3123fbe98"]}
+{"time" : "2026-08-25 11:25:31", "model" : "claro", "count" : 2, "num_rows" : 2, "rows" : [{"len" : 33, "data" : "3123fbe98"}, {"len" : 33, "data" : "3123fbe98"}], "codes" : ["{33}3123fbe98", "{33}3123fbe98"]}
+{"time" : "2026-08-25 11:25:35", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f5e78"}], "codes" : ["{33}3123f5e78"]}
+{"time" : "2026-08-25 11:25:35", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f5e78"}], "codes" : ["{33}3123f5e78"]}
+{"time" : "2026-08-25 11:25:35", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f5e78"}], "codes" : ["{33}3123f5e78"]}
+{"time" : "2026-08-25 11:25:35", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f5e78"}], "codes" : ["{33}3123f5e78"]}
+{"time" : "2026-08-25 11:25:37", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "b123f5e78"}], "codes" : ["{33}b123f5e78"]}
+{"time" : "2026-08-25 11:25:37", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f5e78"}], "codes" : ["{33}3123f5e78"]}
+{"time" : "2026-08-25 11:25:37", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f5e78"}], "codes" : ["{33}3123f5e78"]}
+{"time" : "2026-08-25 11:25:37", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f5e78"}], "codes" : ["{33}3123f5e78"]}
+{"time" : "2026-08-25 11:25:37", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f5e78"}], "codes" : ["{33}3123f5e78"]}
+{"time" : "2026-08-25 11:25:38", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "b123f5e78"}], "codes" : ["{33}b123f5e78"]}
+{"time" : "2026-08-25 11:25:38", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f5e78"}], "codes" : ["{33}3123f5e78"]}
+{"time" : "2026-08-25 11:25:38", "model" : "claro", "count" : 2, "num_rows" : 2, "rows" : [{"len" : 33, "data" : "3123f5e78"}, {"len" : 33, "data" : "3123f5e78"}], "codes" : ["{33}3123f5e78", "{33}3123f5e78"]}
+{"time" : "2026-08-25 11:25:42", "model" : "claro", "count" : 5, "num_rows" : 5, "rows" : [{"len" : 33, "data" : "3123f7e58"}, {"len" : 33, "data" : "3123f7e58"}, {"len" : 33, "data" : "3123f7e58"}, {"len" : 33, "data" : "3123f7e58"}, {"len" : 33, "data" : "3123f7e58"}], "codes" : ["{33}3123f7e58", "{33}3123f7e58", "{33}3123f7e58", "{33}3123f7e58", "{33}3123f7e58"]}
+{"time" : "2026-08-25 11:25:43", "model" : "claro", "count" : 4, "num_rows" : 4, "rows" : [{"len" : 33, "data" : "b123f7e58"}, {"len" : 33, "data" : "3123f7e58"}, {"len" : 33, "data" : "3123f7e58"}, {"len" : 33, "data" : "3123f7e58"}], "codes" : ["{33}b123f7e58", "{33}3123f7e58", "{33}3123f7e58", "{33}3123f7e58"]}
+{"time" : "2026-08-25 11:25:45", "model" : "claro", "count" : 4, "num_rows" : 4, "rows" : [{"len" : 33, "data" : "b123f7e58"}, {"len" : 33, "data" : "3123f7e58"}, {"len" : 33, "data" : "3123f7e58"}, {"len" : 33, "data" : "3123f7e58"}], "codes" : ["{33}b123f7e58", "{33}3123f7e58", "{33}3123f7e58", "{33}3123f7e58"]}
+{"time" : "2026-08-25 11:25:48", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f3e18"}], "codes" : ["{33}3123f3e18"]}
+{"time" : "2026-08-25 11:25:48", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f3e18"}], "codes" : ["{33}3123f3e18"]}
+{"time" : "2026-08-25 11:25:48", "model" : "claro", "count" : 2, "num_rows" : 2, "rows" : [{"len" : 33, "data" : "3123f3e18"}, {"len" : 33, "data" : "3123f3e18"}], "codes" : ["{33}3123f3e18", "{33}3123f3e18"]}
+{"time" : "2026-08-25 11:25:49", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f3e18"}], "codes" : ["{33}3123f3e18"]}
+{"time" : "2026-08-25 11:25:49", "model" : "claro", "count" : 3, "num_rows" : 3, "rows" : [{"len" : 33, "data" : "3123f3e18"}, {"len" : 33, "data" : "3123f3e18"}, {"len" : 33, "data" : "3123f3e18"}], "codes" : ["{33}3123f3e18", "{33}3123f3e18", "{33}3123f3e18"]}
+{"time" : "2026-08-25 11:25:51", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f3e18"}], "codes" : ["{33}3123f3e18"]}
+{"time" : "2026-08-25 11:25:51", "model" : "claro", "count" : 3, "num_rows" : 3, "rows" : [{"len" : 33, "data" : "3123f3e18"}, {"len" : 33, "data" : "3123f3e18"}, {"len" : 33, "data" : "3123f3e18"}], "codes" : ["{33}3123f3e18", "{33}3123f3e18", "{33}3123f3e18"]}
+{"time" : "2026-08-25 11:25:54", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f9eb8"}], "codes" : ["{33}3123f9eb8"]}
+{"time" : "2026-08-25 11:25:54", "model" : "claro", "count" : 3, "num_rows" : 3, "rows" : [{"len" : 33, "data" : "3123f9eb8"}, {"len" : 33, "data" : "3123f9eb8"}, {"len" : 33, "data" : "3123f9eb8"}], "codes" : ["{33}3123f9eb8", "{33}3123f9eb8", "{33}3123f9eb8"]}
+{"time" : "2026-08-25 11:25:55", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 159, "data" : "ffcdbfcedefcf7fe6dfe76f7e7bff36ff3b7bf3e"}], "codes" : ["{159}ffcdbfcedefcf7fe6dfe76f7e7bff36ff3b7bf3e"]}
+{"time" : "2026-08-25 11:25:55", "model" : "Ambientweather-F007TH", "id" : 124, "channel" : 2, "battery_ok" : 1, "temperature_F" : 67.400, "humidity" : 15, "mic" : "CRC"}
+{"time" : "2026-08-25 11:25:55", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f9eb8"}], "codes" : ["{33}3123f9eb8"]}
+{"time" : "2026-08-25 11:25:55", "model" : "claro", "count" : 3, "num_rows" : 3, "rows" : [{"len" : 33, "data" : "3123f9eb8"}, {"len" : 33, "data" : "3123f9eb8"}, {"len" : 33, "data" : "3123f9eb8"}], "codes" : ["{33}3123f9eb8", "{33}3123f9eb8", "{33}3123f9eb8"]}
+{"time" : "2026-08-25 11:25:57", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f9eb8"}], "codes" : ["{33}3123f9eb8"]}
+{"time" : "2026-08-25 11:25:57", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f9eb8"}], "codes" : ["{33}3123f9eb8"]}
+{"time" : "2026-08-25 11:25:57", "model" : "claro", "count" : 2, "num_rows" : 2, "rows" : [{"len" : 33, "data" : "3123f9eb8"}, {"len" : 33, "data" : "3123f9eb8"}], "codes" : ["{33}3123f9eb8", "{33}3123f9eb8"]}
+{"time" : "2026-08-25 11:26:00", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f4e68"}], "codes" : ["{33}3123f4e68"]}
+{"time" : "2026-08-25 11:26:00", "model" : "claro", "count" : 3, "num_rows" : 3, "rows" : [{"len" : 33, "data" : "3123f4e68"}, {"len" : 33, "data" : "3123f4e68"}, {"len" : 33, "data" : "3123f4e68"}], "codes" : ["{33}3123f4e68", "{33}3123f4e68", "{33}3123f4e68"]}
+{"time" : "2026-08-25 11:26:01", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f4e68"}], "codes" : ["{33}3123f4e68"]}
+{"time" : "2026-08-25 11:26:01", "model" : "claro", "count" : 3, "num_rows" : 3, "rows" : [{"len" : 33, "data" : "3123f4e68"}, {"len" : 33, "data" : "3123f4e68"}, {"len" : 33, "data" : "3123f4e68"}], "codes" : ["{33}3123f4e68", "{33}3123f4e68", "{33}3123f4e68"]}
+{"time" : "2026-08-25 11:26:03", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f4e68"}], "codes" : ["{33}3123f4e68"]}
+{"time" : "2026-08-25 11:26:03", "model" : "claro", "count" : 3, "num_rows" : 3, "rows" : [{"len" : 33, "data" : "3123f4e68"}, {"len" : 33, "data" : "3123f4e68"}, {"len" : 33, "data" : "3123f4e68"}], "codes" : ["{33}3123f4e68", "{33}3123f4e68", "{33}3123f4e68"]}
+{"time" : "2026-08-25 11:26:06", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123feec8"}], "codes" : ["{33}3123feec8"]}
+{"time" : "2026-08-25 11:26:06", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123feec8"}], "codes" : ["{33}3123feec8"]}
+{"time" : "2026-08-25 11:26:06", "model" : "claro", "count" : 2, "num_rows" : 2, "rows" : [{"len" : 33, "data" : "3123feec8"}, {"len" : 33, "data" : "3123feec8"}], "codes" : ["{33}3123feec8", "{33}3123feec8"]}
+{"time" : "2026-08-25 11:26:08", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123feec8"}], "codes" : ["{33}3123feec8"]}
+{"time" : "2026-08-25 11:26:08", "model" : "claro", "count" : 3, "num_rows" : 3, "rows" : [{"len" : 33, "data" : "3123feec8"}, {"len" : 33, "data" : "3123feec8"}, {"len" : 33, "data" : "3123feec8"}], "codes" : ["{33}3123feec8", "{33}3123feec8", "{33}3123feec8"]}
+{"time" : "2026-08-25 11:26:10", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123feec8"}], "codes" : ["{33}3123feec8"]}
+{"time" : "2026-08-25 11:26:10", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123feec8"}], "codes" : ["{33}3123feec8"]}
+{"time" : "2026-08-25 11:26:10", "model" : "claro", "count" : 2, "num_rows" : 2, "rows" : [{"len" : 33, "data" : "3123feec8"}, {"len" : 33, "data" : "3123feec8"}], "codes" : ["{33}3123feec8", "{33}3123feec8"]}
+{"time" : "2026-08-25 11:26:13", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123fcee8"}], "codes" : ["{33}3123fcee8"]}
+{"time" : "2026-08-25 11:26:13", "model" : "claro", "count" : 3, "num_rows" : 3, "rows" : [{"len" : 33, "data" : "3123fcee8"}, {"len" : 33, "data" : "3123fcee8"}, {"len" : 33, "data" : "3123fcee8"}], "codes" : ["{33}3123fcee8", "{33}3123fcee8", "{33}3123fcee8"]}
+{"time" : "2026-08-25 11:26:15", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123fcee8"}], "codes" : ["{33}3123fcee8"]}
+{"time" : "2026-08-25 11:26:15", "model" : "claro", "count" : 3, "num_rows" : 3, "rows" : [{"len" : 33, "data" : "3123fcee8"}, {"len" : 33, "data" : "3123fcee8"}, {"len" : 33, "data" : "3123fcee8"}], "codes" : ["{33}3123fcee8", "{33}3123fcee8", "{33}3123fcee8"]}
+{"time" : "2026-08-25 11:26:16", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123fcee8"}], "codes" : ["{33}3123fcee8"]}
+{"time" : "2026-08-25 11:26:16", "model" : "claro", "count" : 3, "num_rows" : 3, "rows" : [{"len" : 33, "data" : "3123fcee8"}, {"len" : 33, "data" : "3123fcee8"}, {"len" : 33, "data" : "3123fcee8"}], "codes" : ["{33}3123fcee8", "{33}3123fcee8", "{33}3123fcee8"]}
+{"time" : "2026-08-25 11:26:19", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f8ea8"}], "codes" : ["{33}3123f8ea8"]}
+{"time" : "2026-08-25 11:26:19", "model" : "claro", "count" : 3, "num_rows" : 3, "rows" : [{"len" : 33, "data" : "3123f8ea8"}, {"len" : 33, "data" : "3123f8ea8"}, {"len" : 33, "data" : "3123f8ea8"}], "codes" : ["{33}3123f8ea8", "{33}3123f8ea8", "{33}3123f8ea8"]}
+{"time" : "2026-08-25 11:26:21", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f8ea8"}], "codes" : ["{33}3123f8ea8"]}
+{"time" : "2026-08-25 11:26:21", "model" : "claro", "count" : 3, "num_rows" : 3, "rows" : [{"len" : 33, "data" : "3123f8ea8"}, {"len" : 33, "data" : "3123f8ea8"}, {"len" : 33, "data" : "3123f8ea8"}], "codes" : ["{33}3123f8ea8", "{33}3123f8ea8", "{33}3123f8ea8"]}
+{"time" : "2026-08-25 11:26:22", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f8ea8"}], "codes" : ["{33}3123f8ea8"]}
+{"time" : "2026-08-25 11:26:22", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f8ea8"}], "codes" : ["{33}3123f8ea8"]}
+{"time" : "2026-08-25 11:26:22", "model" : "claro", "count" : 2, "num_rows" : 2, "rows" : [{"len" : 33, "data" : "3123f8ea8"}, {"len" : 33, "data" : "3123f8ea8"}], "codes" : ["{33}3123f8ea8", "{33}3123f8ea8"]}
+{"time" : "2026-08-25 11:26:25", "model" : "claro", "count" : 4, "num_rows" : 4, "rows" : [{"len" : 33, "data" : "3123fdef8"}, {"len" : 33, "data" : "3123fdef8"}, {"len" : 33, "data" : "3123fdef8"}, {"len" : 33, "data" : "3123fdef8"}], "codes" : ["{33}3123fdef8", "{33}3123fdef8", "{33}3123fdef8", "{33}3123fdef8"]}
+{"time" : "2026-08-25 11:26:26", "model" : "claro", "count" : 4, "num_rows" : 4, "rows" : [{"len" : 33, "data" : "3123fdef8"}, {"len" : 33, "data" : "3123fdef8"}, {"len" : 33, "data" : "3123fdef8"}, {"len" : 33, "data" : "3123fdef8"}], "codes" : ["{33}3123fdef8", "{33}3123fdef8", "{33}3123fdef8", "{33}3123fdef8"]}
+{"time" : "2026-08-25 11:26:28", "model" : "claro", "count" : 4, "num_rows" : 4, "rows" : [{"len" : 33, "data" : "3123fdef8"}, {"len" : 33, "data" : "3123fdef8"}, {"len" : 33, "data" : "3123fdef8"}, {"len" : 33, "data" : "3123fdef8"}], "codes" : ["{33}3123fdef8", "{33}3123fdef8", "{33}3123fdef8", "{33}3123fdef8"]}
+{"time" : "2026-08-25 11:26:30", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f6e48"}], "codes" : ["{33}3123f6e48"]}
+{"time" : "2026-08-25 11:26:30", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f6e48"}], "codes" : ["{33}3123f6e48"]}
+{"time" : "2026-08-25 11:26:30", "model" : "claro", "count" : 2, "num_rows" : 2, "rows" : [{"len" : 33, "data" : "3123f6e48"}, {"len" : 33, "data" : "3123f6e48"}], "codes" : ["{33}3123f6e48", "{33}3123f6e48"]}
+{"time" : "2026-08-25 11:26:31", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f6e48"}], "codes" : ["{33}3123f6e48"]}
+{"time" : "2026-08-25 11:26:31", "model" : "claro", "count" : 3, "num_rows" : 3, "rows" : [{"len" : 33, "data" : "3123f6e48"}, {"len" : 33, "data" : "3123f6e48"}, {"len" : 33, "data" : "3123f6e48"}], "codes" : ["{33}3123f6e48", "{33}3123f6e48", "{33}3123f6e48"]}
+{"time" : "2026-08-25 11:26:33", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f6e48"}], "codes" : ["{33}3123f6e48"]}
+{"time" : "2026-08-25 11:26:33", "model" : "claro", "count" : 3, "num_rows" : 3, "rows" : [{"len" : 33, "data" : "3123f6e48"}, {"len" : 33, "data" : "3123f6e48"}, {"len" : 33, "data" : "3123f6e48"}], "codes" : ["{33}3123f6e48", "{33}3123f6e48", "{33}3123f6e48"]}
+{"time" : "2026-08-25 11:26:36", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:26:36", "model" : "claro", "count" : 3, "num_rows" : 3, "rows" : [{"len" : 33, "data" : "3123f2e08"}, {"len" : 33, "data" : "3123f2e08"}, {"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08", "{33}3123f2e08", "{33}3123f2e08"]}
+{"time" : "2026-08-25 11:26:37", "model" : "claro", "count" : 4, "num_rows" : 4, "rows" : [{"len" : 33, "data" : "3123f2e08"}, {"len" : 33, "data" : "3123f2e08"}, {"len" : 33, "data" : "3123f2e08"}, {"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08", "{33}3123f2e08", "{33}3123f2e08", "{33}3123f2e08"]}
+{"time" : "2026-08-25 11:26:39", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:26:39", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08"]}
+{"time" : "2026-08-25 11:26:39", "model" : "claro", "count" : 2, "num_rows" : 2, "rows" : [{"len" : 33, "data" : "3123f2e08"}, {"len" : 33, "data" : "3123f2e08"}], "codes" : ["{33}3123f2e08", "{33}3123f2e08"]}
+{"time" : "2026-08-25 11:26:41", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:41", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:41", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:41", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:42", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "b123f0e28"}], "codes" : ["{33}b123f0e28"]}
+{"time" : "2026-08-25 11:26:42", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:42", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:42", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "b123f0e28"}], "codes" : ["{33}b123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:43", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123f0e28"}], "codes" : ["{33}3123f0e28"]}
+{"time" : "2026-08-25 11:26:50", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123effd8"}], "codes" : ["{33}3123effd8"]}
+{"time" : "2026-08-25 11:26:50", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123effd8"}], "codes" : ["{33}3123effd8"]}
+{"time" : "2026-08-25 11:26:50", "model" : "claro", "count" : 2, "num_rows" : 2, "rows" : [{"len" : 33, "data" : "3123effd8"}, {"len" : 33, "data" : "3123effd8"}], "codes" : ["{33}3123effd8", "{33}3123effd8"]}
+{"time" : "2026-08-25 11:26:51", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123effd8"}], "codes" : ["{33}3123effd8"]}
+{"time" : "2026-08-25 11:26:51", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123effd8"}], "codes" : ["{33}3123effd8"]}
+{"time" : "2026-08-25 11:26:51", "model" : "claro", "count" : 2, "num_rows" : 2, "rows" : [{"len" : 33, "data" : "3123effd8"}, {"len" : 33, "data" : "3123effd8"}], "codes" : ["{33}3123effd8", "{33}3123effd8"]}
+{"time" : "2026-08-25 11:26:52", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 159, "data" : "ffcdbfcedefd77fe6dfe76f7ebbff36ff3b7bf5e"}], "codes" : ["{159}ffcdbfcedefd77fe6dfe76f7ebbff36ff3b7bf5e"]}
+{"time" : "2026-08-25 11:26:52", "model" : "Ambientweather-F007TH", "id" : 124, "channel" : 2, "battery_ok" : 1, "temperature_F" : 67.500, "humidity" : 15, "mic" : "CRC"}
+{"time" : "2026-08-25 11:26:53", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123effd8"}], "codes" : ["{33}3123effd8"]}
+{"time" : "2026-08-25 11:26:53", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123effd8"}], "codes" : ["{33}3123effd8"]}
+{"time" : "2026-08-25 11:26:53", "model" : "claro", "count" : 2, "num_rows" : 2, "rows" : [{"len" : 33, "data" : "3123effd8"}, {"len" : 33, "data" : "3123effd8"}], "codes" : ["{33}3123effd8", "{33}3123effd8"]}
+{"time" : "2026-08-25 11:26:55", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123eefc8"}], "codes" : ["{33}3123eefc8"]}
+{"time" : "2026-08-25 11:26:55", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123eefc8"}], "codes" : ["{33}3123eefc8"]}
+{"time" : "2026-08-25 11:26:55", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123eefc8"}], "codes" : ["{33}3123eefc8"]}
+{"time" : "2026-08-25 11:26:55", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123eefc8"}], "codes" : ["{33}3123eefc8"]}
+{"time" : "2026-08-25 11:26:56", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "b123eefc8"}], "codes" : ["{33}b123eefc8"]}
+{"time" : "2026-08-25 11:26:56", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123eefc8"}], "codes" : ["{33}3123eefc8"]}
+{"time" : "2026-08-25 11:26:56", "model" : "claro", "count" : 2, "num_rows" : 2, "rows" : [{"len" : 33, "data" : "3123eefc8"}, {"len" : 33, "data" : "3123eefc8"}], "codes" : ["{33}3123eefc8", "{33}3123eefc8"]}
+{"time" : "2026-08-25 11:26:58", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123eefc8"}], "codes" : ["{33}3123eefc8"]}
+{"time" : "2026-08-25 11:26:58", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123eefc8"}], "codes" : ["{33}3123eefc8"]}
+{"time" : "2026-08-25 11:26:58", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123eefc8"}], "codes" : ["{33}3123eefc8"]}
+{"time" : "2026-08-25 11:26:58", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123eefc8"}], "codes" : ["{33}3123eefc8"]}
+{"time" : "2026-08-25 11:27:00", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123edff8"}], "codes" : ["{33}3123edff8"]}
+{"time" : "2026-08-25 11:27:00", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123edff8"}], "codes" : ["{33}3123edff8"]}
+{"time" : "2026-08-25 11:27:00", "model" : "claro", "count" : 2, "num_rows" : 2, "rows" : [{"len" : 33, "data" : "3123edff8"}, {"len" : 33, "data" : "3123edff8"}], "codes" : ["{33}3123edff8", "{33}3123edff8"]}
+{"time" : "2026-08-25 11:27:01", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123edff8"}], "codes" : ["{33}3123edff8"]}
+{"time" : "2026-08-25 11:27:01", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123edff8"}], "codes" : ["{33}3123edff8"]}
+{"time" : "2026-08-25 11:27:01", "model" : "claro", "count" : 2, "num_rows" : 2, "rows" : [{"len" : 33, "data" : "3123edff8"}, {"len" : 33, "data" : "3123edff8"}], "codes" : ["{33}3123edff8", "{33}3123edff8"]}
+{"time" : "2026-08-25 11:27:03", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123edff8"}], "codes" : ["{33}3123edff8"]}
+{"time" : "2026-08-25 11:27:03", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123edff8"}], "codes" : ["{33}3123edff8"]}
+{"time" : "2026-08-25 11:27:03", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123edff8"}], "codes" : ["{33}3123edff8"]}
+{"time" : "2026-08-25 11:27:03", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123edff8"}], "codes" : ["{33}3123edff8"]}
+{"time" : "2026-08-25 11:27:03", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123edff8"}], "codes" : ["{33}3123edff8"]}
+{"time" : "2026-08-25 11:27:05", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123ecfe8"}], "codes" : ["{33}3123ecfe8"]}
+{"time" : "2026-08-25 11:27:05", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123ecfe8"}], "codes" : ["{33}3123ecfe8"]}
+{"time" : "2026-08-25 11:27:05", "model" : "claro", "count" : 2, "num_rows" : 2, "rows" : [{"len" : 33, "data" : "3123ecfe8"}, {"len" : 33, "data" : "3123ecfe8"}], "codes" : ["{33}3123ecfe8", "{33}3123ecfe8"]}
+{"time" : "2026-08-25 11:27:07", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123ecfe8"}], "codes" : ["{33}3123ecfe8"]}
+{"time" : "2026-08-25 11:27:07", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123ecfe8"}], "codes" : ["{33}3123ecfe8"]}
+{"time" : "2026-08-25 11:27:07", "model" : "claro", "count" : 2, "num_rows" : 2, "rows" : [{"len" : 33, "data" : "3123ecfe8"}, {"len" : 33, "data" : "3123ecfe8"}], "codes" : ["{33}3123ecfe8", "{33}3123ecfe8"]}
+{"time" : "2026-08-25 11:27:08", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123ecfe8"}], "codes" : ["{33}3123ecfe8"]}
+{"time" : "2026-08-25 11:27:08", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123ecfe8"}], "codes" : ["{33}3123ecfe8"]}
+{"time" : "2026-08-25 11:27:08", "model" : "claro", "count" : 2, "num_rows" : 2, "rows" : [{"len" : 33, "data" : "3123ecfe8"}, {"len" : 33, "data" : "3123ecfe8"}], "codes" : ["{33}3123ecfe8", "{33}3123ecfe8"]}
+{"time" : "2026-08-25 11:27:10", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123eaf88"}], "codes" : ["{33}3123eaf88"]}
+{"time" : "2026-08-25 11:27:10", "model" : "claro", "count" : 3, "num_rows" : 3, "rows" : [{"len" : 33, "data" : "3123eaf88"}, {"len" : 33, "data" : "3123eaf88"}, {"len" : 33, "data" : "3123eaf88"}], "codes" : ["{33}3123eaf88", "{33}3123eaf88", "{33}3123eaf88"]}
+{"time" : "2026-08-25 11:27:12", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123eaf88"}], "codes" : ["{33}3123eaf88"]}
+{"time" : "2026-08-25 11:27:12", "model" : "claro", "count" : 3, "num_rows" : 3, "rows" : [{"len" : 33, "data" : "3123eaf88"}, {"len" : 33, "data" : "3123eaf88"}, {"len" : 33, "data" : "3123eaf88"}], "codes" : ["{33}3123eaf88", "{33}3123eaf88", "{33}3123eaf88"]}
+{"time" : "2026-08-25 11:27:13", "model" : "claro", "count" : 1, "num_rows" : 1, "rows" : [{"len" : 33, "data" : "3123eaf88"}], "codes" : ["{33}3123eaf88"]}
+{"time" : "2026-08-25 11:27:13", "model" : "claro", "count" : 3, "num_rows" : 3, "rows" : [{"len" : 33, "data" : "3123eaf88"}, {"len" : 33, "data" : "3123eaf88"}, {"len" : 33, "data" : "3123eaf88"}], "codes" : ["{33}3123eaf88", "{33}3123eaf88", "{33}3123eaf88"]}
