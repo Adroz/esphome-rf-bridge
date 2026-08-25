@@ -1,6 +1,6 @@
 # esphome/claro-fans.yaml
 # Skeleton for Claro Whisper DC fan control via ESP32 + CC1101.
-# Wire CC1101 before flashing — see wiring comments below.
+# Wire CC1101 before flashing -- see wiring comments below.
 # ESPHome >= 2024.12 required for native CC1101 component.
 
 esphome:
@@ -8,7 +8,7 @@ esphome:
   friendly_name: Claro Fans
 
 esp32:
-  board: esp32dev  # update to actual board variant (e.g. lolin32)
+  board: esp32dev  # update to actual board variant
 
 wifi:
   ssid: !secret wifi_ssid
@@ -24,38 +24,39 @@ ota:
 
 logger:
 
-# ── SPI bus (CC1101 module) ──────────────────────────────────────────────────
-# CC1101 8-pin green module (3.3V ONLY — do not exceed):
-#   VCC → 3.3V    GND → GND
-#   MOSI → GPIO23  MISO → GPIO19  SCK → GPIO18  CSN → GPIO5
-#   GDO0 → GPIO4  (RF data line used by remote_transmitter — see esphome#16876)
-#   GDO2 → NC
+# SPI bus (CC1101 module)
+# CC1101 8-pin green module (3.3V ONLY -- do not exceed):
+#   VCC -> 3.3V    GND -> GND
+#   MOSI -> GPIO23  MISO -> GPIO19  SCK -> GPIO18  CSN -> GPIO5
+#   GDO0 -> GPIO4  (RF data line; see esphome#16876)
+#   GDO2 -> NC
 spi:
   clk_pin: GPIO18
   mosi_pin: GPIO23
   miso_pin: GPIO19
 
-# CC1101 transceiver (ESPHome ≥ 2024.12)
+# CC1101 transceiver (ESPHome >= 2024.12)
 cc1101:
   cs_pin: GPIO5
   gdo0_pin: GPIO4
-  frequency: 433920  # kHz (433.92 MHz confirmed in captures)
+  frequency: 433920  # kHz -- 433.92 MHz confirmed in captures
   modulation: OOK
   bandwidth: 200     # kHz
   tx_power: 10       # dBm
 
-# ── RF transmitter ───────────────────────────────────────────────────────────
+# RF transmitter
+# GDO0 carries OOK bitstream; carrier_duty_percent=100 = pure OOK, no subcarrier
 remote_transmitter:
   id: rf_transmitter
-  pin: GPIO4        # CC1101 GDO0 — see esphome#16876 if GDO0 conflicts
-  carrier_duty_percent: 100%  # OOK: no subcarrier
+  pin: GPIO4
+  carrier_duty_percent: 100%
 
-# ── Frame encoder ─────────────────────────────────────────────────────────────
+# Frame encoder
 # Protocol (PROTOCOL.md): 33-bit OOK-PWM frame
 #   [addr_hi 8b][addr_lo 8b][cmd 8b][chk 8b][stop 1b]
 #   chk = addr_hi ^ addr_lo ^ cmd
-#   0-bit = 412 µs mark, 1-bit = 1192 µs mark, gap = 1172 µs space
-#   4 repeats per button press, 11.9 ms reset gap between repeats
+#   0-bit = 412 us mark, 1-bit = 1192 us mark, gap = 1172 us, reset = 11932 us
+#   4 repeats per button press
 script:
   - id: send_claro_cmd
     mode: queued
@@ -74,7 +75,7 @@ script:
                 uint32_t frame = ((uint32_t)hi << 24) | ((uint32_t)lo << 16)
                                | ((uint32_t)c  <<  8) |  chk;
 
-                // OOK-PWM pulse list: positive = mark µs, negative = space µs
+                // OOK-PWM: positive = mark us, negative = space us
                 std::vector<int32_t> pulses;
                 pulses.reserve(68);
                 for (int i = 31; i >= 0; i--) {
@@ -88,8 +89,8 @@ script:
                 tx.get_data()->set_data(pulses);
                 tx.perform();
 
-# ── Fan entities ───────────────────────────────────────────────────────────────
-# State is optimistic (RF is one-way; factory remote will desync — see issue #7).
+# Fan entities
+# State is optimistic (RF is one-way; factory remote will desync -- see issue #7)
 fan:
   - platform: template
     name: "Fan A"
@@ -119,7 +120,7 @@ fan:
           const uint8_t spd[] = {0xFB, 0xF5, 0xF7, 0xF3, 0xF9, 0xFA};
           if (x >= 1 && x <= 6) id(send_claro_cmd).execute(0x9221, spd[x-1]);
 
-# Light / CCT / reverse as buttons — placeholder pending HA entity model (issue #7)
+# Light / CCT / reverse as buttons -- placeholder pending HA entity model (issue #7)
 button:
   - platform: template
     name: "Fan A Light"
