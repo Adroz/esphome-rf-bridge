@@ -58,4 +58,6 @@ B speed1:    9 2 2 1 f b 4 8 8
 - **Nibble 7:** constant per remote (`e` for A, `4`/`5` for B) → part of address/parity.
 - **Nibbles 8–9:** vary per button and per remote → checksum over address+command (to be confirmed).
 
-**Implication:** the two fans are individually addressable, and remote B's full 19-command set should be synthesisable from remote A's commands + remote B's address once the checksum is cracked. A full remote-B capture is therefore optional, pending the decode ticket.
+**Checksum (verified against captures):** reading each code as bytes `[id_hi][id_lo][cmd][chk][pad]`, remote A satisfies `chk = cmd XOR 0x12` for **every** button (e.g. `0xfb^0xe9=0x12`, `0xf5^0xe7=0x12`, `0xfc^0xee=0x12`). This does **not** hold for remote B (`0xfb^0x48=0xb3`), so `chk` is a checksum over **address+command**, not a fixed `cmd^0x12` — the `0x12` is remote A's address-derived constant. The decode ticket must model the checksum as address-dependent.
+
+**Implication:** the two fans are individually addressable, and remote B's full 19-command set should be synthesisable from remote A's commands + remote B's address once the address→checksum relationship is cracked. A full remote-B capture is therefore optional, pending the decode ticket.
